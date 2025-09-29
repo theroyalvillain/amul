@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMUL - THE TASTE OF INDIA</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font for clean, modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header/Navigation -->
+    <header class="absolute top-0 w-full z-10 p-6 flex justify-end">
+        <nav class="hidden md:flex space-x-8 text-white text-sm font-semibold tracking-widest">
+            <a href="#about" class="hover:text-gold transition duration-300">ABOUT</a>
+            <a href="#products" class="hover:text-gold transition duration-300">PRODUCTS</a>
+            <a href="#contact" class="hover:text-gold transition duration-300">CONTACT</a>
+        </nav>
+        <!-- Mobile menu icon placeholder -->
+        <div class="md:hidden text-white text-2xl">
+            <!-- Hamburger Icon SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[85vh] flex flex-col justify-end pt-20 relative">
+        <!-- Title positioned top-left -->
+        <div class="container mx-auto px-6 lg:px-20 absolute top-1/4 left-0 right-0">
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white uppercase max-w-lg mt-16 drop-shadow-lg">
+                AMUL - THE TASTE OF INDIA
+            </h1>
+        </div>
+
+        <!-- Statistics Overlay -->
+        <div class="bg-gray-900 bg-opacity-70 backdrop-blur-sm w-full py-8 text-white">
+            <div class="container mx-auto px-6 lg:px-20 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="stat p-2">
+                    <p class="text-4xl font-bold text-gold">4 MILLION</p>
+                    <p class="text-xs uppercase tracking-wider mt-1 text-gray-300">Dairy Farmers</p>
+                </div>
+                <div class="stat p-2">
+                    <p class="text-4xl font-bold text-gold">100+</p>
+                    <p class="text-xs uppercase tracking-wider mt-1 text-gray-300">Product Range</p>
+                </div>
+                <div class="stat p-2">
+                    <p class="text-4xl font-bold text-gold">70</p>
+                    <p class="text-xs uppercase tracking-wider mt-1 text-gray-300">Years of Trust</p>
+                </div>
+                <div class="stat p-2">
+                    <p class="text-4xl font-bold text-gold">89+</p>
+                    <p class="text-xs uppercase tracking-wider mt-1 text-gray-300">Countries Exported</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Our Dairy Offerings -->
+    <section id="products" class="py-20 text-white" style="background-color: var(--color-dark);">
+        <div class="container mx-auto px-6 lg:px-20">
+            <h2 class="text-center text-xl font-light uppercase tracking-[0.3em] mb-16 text-gray-400">
+                OUR DAIRY OFFERINGS
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Card 1: Milk Products -->
+                <div class="p-4 rounded-xl">
+                    <img src="images/p2.jpg" class="w-full h-auto rounded-lg mb-4 shadow-lg" alt="Milk Products" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2b2b2b/fff?text=MILK';">
+                    <h3 class="text-2xl font-extrabold uppercase tracking-widest text-gold mb-2">MILK PRODUCTS</h3>
+                    <p class="text-sm text-gray-300 font-light mb-4">
+                        Discover the purest quality milk and cream products, pasteurized for freshness and packaged with care. Our products are sourced from millions of dedicated farmers.
+                    </p>
+                    <a href="#" class="text-xs uppercase tracking-wider text-gray-400 hover:text-gold transition duration-300 border-b-2 border-gray-500 hover:border-gold pb-1">
+                        Explore Now
+                    </a>
+                </div>
+
+                <!-- Card 2: Cheese Creations -->
+                <div class="p-4 rounded-xl">
+                    <img src="/images/p1.jpg" class="w-full h-auto rounded-lg mb-4 shadow-lg" alt="Cheese Creations" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2b2b2b/fff?text=CHEESE';">
+                    <h3 class="text-2xl font-extrabold uppercase tracking-widest text-gold mb-2">CHEESE CREATIONS</h3>
+                    <p class="text-sm text-gray-300 font-light mb-4">
+                        From classic cheddar to exotic processed slices, our cheese range is crafted for the perfect bite and premium taste.
+                    </p>
+                    <a href="#" class="text-xs uppercase tracking-wider text-gray-400 hover:text-gold transition duration-300 border-b-2 border-gray-500 hover:border-gold pb-1">
+                        Explore Now
+                    </a>
+                </div>
+
+                <!-- Card 3: Yogurt Innovations -->
+                <div class="p-4 rounded-xl">
+                    <img src="images/p3.jpg" class="w-full h-auto rounded-lg mb-4 shadow-lg" alt="Yogurt Innovations" onerror="this.onerror=null; this.src='https://placehold.co/400x250/2b2b2b/fff?text=YOGURT';">
+                    <h3 class="text-2xl font-extrabold uppercase tracking-widest text-gold mb-2">YOGURT INNOVATIONS</h3>
+                    <p class="text-sm text-gray-300 font-light mb-4">
+                        A delicious and healthy selection of yogurts, probiotic drinks, and curd products for every lifestyle and dietary need.
+                    </p>
+                    <a href="#" class="text-xs uppercase tracking-wider text-gray-400 hover:text-gold transition duration-300 border-b-2 border-gray-500 hover:border-gold pb-1">
+                        Explore Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: The Taste of Togetherness (Image Background) -->
+    <section class="togetherness-bg py-32 flex items-center">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="max-w-4xl mx-auto bg-black bg-opacity-50 p-8 rounded-xl shadow-2xl text-center border-t-4 border-gold">
+                <h2 class="text-xl sm:text-3xl font-bold uppercase tracking-widest text-white mb-4">
+                    THE TASTE OF TOGETHERNESS
+                </h2>
+                <p class="text-base text-gray-200 font-light leading-relaxed">
+                    Amul is not just a brand; it's a revolutionary cooperative movement that connects millions of hardworking farmers with millions of consumers, ensuring unparalleled quality and shared prosperity at every stage of the supply chain. We are built on the foundational values of cooperation and mutual trust.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Learn More About Us -->
+    <section class="py-20 text-white bg-brown">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+            <h2 class="text-xs font-light uppercase tracking-[0.3em] mb-3 text-gray-200">
+                WORK WITH US
+            </h2>
+            <h3 class="text-3xl font-extrabold uppercase tracking-wide mb-8">
+                LEARN MORE ABOUT US
+            </h3>
+            <p class="max-w-5xl mx-auto text-base text-gray-100 mb-8 leading-relaxed">
+                Founded in 1946, Amul has grown into a powerful testament to the power of farmer cooperation. We are deeply committed to sustainable practices, empowering rural livelihoods, and tirelessly delivering unadulterated, nutritious dairy products to every Indian household. Our successful journey is one of collective effort and shared success that spans over seven decades.
+            </p>
+            <a href="#" class="inline-block px-10 py-3 bg-white text-dark font-semibold uppercase text-sm tracking-wider rounded-full shadow-2xl hover:bg-gray-200 transition duration-300" style="color: var(--color-dark);">
+                FIND OUT MORE
+            </a>
+        </div>
+    </section>
+
+    <!-- Section 5: Explore the World of Dairy (Split Layout) -->
+    <section class="grid lg:grid-cols-2 text-white min-h-[500px] overflow-hidden">
+        <!-- Left Card -->
+        <div class="p-12 md:p-20 flex flex-col justify-center bg-brown">
+            <div class="max-w-xl">
+                <h2 class="text-4xl lg:text-5xl font-extrabold uppercase mb-4 leading-tight">
+                    LET'S EXPLORE THE WORLD OF DAIRY TOGETHER.
+                </h2>
+                <p class="text-base font-light text-gray-100 mt-4 leading-relaxed">
+                    Join us on a fascinating journey from the lush green farms to your table. Learn about our ethical sourcing, stringent quality control measures, and the cooperative model that has positioned Amul as a global dairy leader.
+                </p>
+            </div>
+        </div>
+        <!-- Right Image -->
+        <div class="bg-cover bg-center" style="background-image: url('/images/p4.jpg'); min-height: 300px;">
+        </div>
+    </section>
+
+    <!-- Section 6: Mission Statement (Dark Background) -->
+    <section class="py-20 text-white" style="background-color: var(--color-dark);">
+        <div class="container mx-auto px-6 lg:px-20 text-center">
+            <p class="max-w-5xl mx-auto text-lg md:text-xl italic font-light leading-relaxed mb-10 text-gray-300">
+                "We are dedicated to enriching lives through superior nourishment, ensuring economic prosperity for our farmers, and upholding the integrity of India's esteemed dairy heritage. Amul—an enterprise built on trust, quality, and a profound commitment to the nation's well-being."
+            </p>
+            <h2 class="text-4xl font-extrabold uppercase tracking-wide text-gold">
+                ELEVATE YOUR MEALS, ELEVATE YOUR LIFE.
+            </h2>
+        </div>
+    </section>
+
+    <!-- Section 7 & Footer: Get In Touch / Contacts -->
+    <footer id="contact" class="py-20" style="background-color: #1a1a1a;">
+        <div class="container mx-auto px-6 lg:px-20">
+            <!-- Contact Form Area -->
+            <div class="mb-20">
+                <h2 class="text-white text-3xl font-bold mb-12 text-center">
+                    GET IN TOUCH THROUGH FORM
+                </h2>
+                <div class="lg:flex lg:space-x-12">
+                    <!-- Form (Left Side - Wider) -->
+                    <form class="lg:w-2/3 space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full p-4 bg-[#333] border border-[#555] text-white rounded-lg focus:outline-none focus:border-gold transition duration-300" required>
+                            <input type="email" placeholder="Your Email" class="w-full p-4 bg-[#333] border border-[#555] text-white rounded-lg focus:outline-none focus:border-gold transition duration-300" required>
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full p-4 bg-[#333] border border-[#555] text-white rounded-lg focus:outline-none focus:border-gold transition duration-300" required>
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-4 bg-[#333] border border-[#555] text-white rounded-lg focus:outline-none focus:border-gold transition duration-300" required></textarea>
+                        <button type="submit" class="w-full py-4 bg-gold text-[#1a1a1a] font-extrabold uppercase tracking-wider rounded-lg shadow-xl hover:bg-yellow-400 transition duration-300 transform hover:scale-[1.01]">
+                            SEND MESSAGE
+                        </button>
+                    </form>
+
+                    <!-- Contact Details (Right Side - Narrower) -->
+                    <div class="lg:w-1/3 mt-10 lg:mt-0 space-y-8 text-white">
+                        <h3 class="text-2xl font-bold uppercase tracking-wider mb-6">CONTACTS</h3>
+                        
+                        <!-- Contact Item 1: Phone -->
+                        <div class="flex items-start space-x-4">
+                            <div class="text-gold text-2xl mt-1 p-3 rounded-full bg-[#333]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-4.71-3.79A19.45 19.45 0 0 1 2.87 5.15 2.18 2.18 0 0 1 4.89 3h3a2 2 0 0 1 2 1.72 17.6 17.6 0 0 0 .58 3.53 2 2 0 0 1-.58 1.58l-1.3 1.3c2.45 2.45 5.56 5.56 8 8l1.3-1.3a2 2 0 0 1 1.58-.58 17.6 17.6 0 0 0 3.53.58 2 2 0 0 1 1.72 2z"/></svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-sm uppercase tracking-wider text-gold mb-1">CALL US</p>
+                                <p class="text-sm text-gray-300">+91 123 456 7890</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Item 2: Email -->
+                        <div class="flex items-start space-x-4">
+                            <div class="text-gold text-2xl mt-1 p-3 rounded-full bg-[#333]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-sm uppercase tracking-wider text-gold mb-1">EMAIL</p>
+                                <p class="text-sm text-gray-300">info@amul.coop</p>
+                            </div>
+                        </div>
+
+                        <!-- Contact Item 3: Hours -->
+                        <div class="flex items-start space-x-4">
+                            <div class="text-gold text-2xl mt-1 p-3 rounded-full bg-[#333]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-sm uppercase tracking-wider text-gold mb-1">WORKING HOURS</p>
+                                <p class="text-sm text-gray-300">Mon - Sat: 9am - 6pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Footer Links/Copyright -->
+            <div class="border-t border-[#333] pt-8 text-center text-sm text-gray-500">
+                <p>
+                    &copy; 2024 AMUL. All Rights Reserved. | Designed with <span class="text-red-500">&hearts;</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+

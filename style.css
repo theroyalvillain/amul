@@ -1,0 +1,27 @@
+/* Custom Variables and Base Styles */
+:root {
+    /* Dark Charcoal Background */
+    --color-dark: #232123;
+    /* Accent Gold/Yellow */
+    --color-accent-gold: #FFC107;
+    /* Brown/Terracotta Accent */
+    --color-brown: #A87E5B;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-dark);
+}
+
+/* Utility class to apply the gold color */
+.text-gold {
+    color: var(--color-accent-gold);
+}
+
+.bg-gold {
+    background-color: var(--color-accent-gold);
+}
+
+.bg-brown {
+    background-color: var(--color-brown);
+}
